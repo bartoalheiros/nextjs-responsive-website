@@ -6,6 +6,11 @@
   --primary-color: #fa0;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .hero-bg-image {
   background-image: url('https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2018-9/grasshopper_plate-1296x728-header.jpg?w=1155&h=1528')
 }
