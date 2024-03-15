@@ -23,8 +23,37 @@ export const Navbar = () =>
               { navbar ? <FaTimesCircle /> : <FaBars /> }
             </button>
           </div>
-
+          
         </div>
+
+        <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${ navbar ? 'p-12 md:p-0 block' : 'hidden' }`}>
+            <ul className='h-screen justify-end items-center md:h-auto md:flex'>
+              <li className='text-left p-3 md:mb-4 uppercase font-bold text-2xl md:text-[18px] md:px-4 hover:text-[var(--primary-color)] cursor-pointer'>
+                <Link href="https://en.wikipedia.org/wiki/Insects_as_food" target="_blank">
+                  Insects as Food
+                </Link>
+              </li>
+
+              <li className='text-left p-3 md:mb-4 uppercase font-bold text-2xl md:text-[18px] md:px-4 hover:text-[var(--primary-color)] cursor-pointer'>
+                  <Link href="/#ikea">
+                      IKEA's Insect Burger
+                  </Link>
+              </li>
+
+              <li className='text-left p-3 md:mb-4 uppercase font-bold text-2xl md:text-[18px] md:px-4 hover:text-[var(--primary-color)] cursor-pointer'>
+                  <Link href="https://www.jiminis.com/shop/lang/en/" target="_blank">
+                      shop
+                  </Link>
+              </li>
+
+              <li className='md:mr-2 text-left p-3 md:mb-4 uppercase font-bold text-2xl md:text-[18px] md:px-4 hover:text-[var(--primary-color)] cursor-pointer'>
+                  <Link href="/contact">
+                      contact
+                  </Link>
+              </li>
+            </ul>
+          </div>
+
       </div>
     </nav>
   )  
