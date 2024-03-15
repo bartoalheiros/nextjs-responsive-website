@@ -4,7 +4,7 @@ const page = () =>
 {
   
   return (
-    <div>contact page</div>
+    <div className='mt-[200px]'>contact page</div>
   )
 
 }

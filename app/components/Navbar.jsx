@@ -16,6 +16,14 @@ export const Navbar = () =>
           <Link href="/">
             <h2 className='text-3xl text-[var(--primary-color)] font-bold uppercase md:text-2xl'>snacky</h2>
           </Link>
+
+          <div className='md:hidden'>
+            <button className='p-2 rounded-md outline-none text-2xl text-[var(--primary-color)]' onClick={ () => setNavbar( !navbar )
+            }>
+              { navbar ? <FaTimesCircle /> : <FaBars /> }
+            </button>
+          </div>
+
         </div>
       </div>
     </nav>
